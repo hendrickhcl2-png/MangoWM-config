@@ -1,56 +1,50 @@
 window {
-    font-family: HYLeMiaoTiJ,CaskaydiaCove Nerd Font, monospace;
-    font-size: 12pt;
-    font-weight: bold;
-    color: #f4dfcd; 
-    background-color: rgba(46, 42, 30, 0.69);
+    font-family: "Maple Mono NF CN", monospace;
+    background-color: rgba(180, 210, 230, 0.28);
 }
 
 button {
     background-repeat: no-repeat;
-    background-position: center;
-    font-size: 40px;
-    background-size: 60%;
-    border: none;
-    color: #d5b497;
-    text-shadow: none;
-    border-radius: 20px 20px 20px 20px;
-    background-color: rgba(121, 81, 1, 0);
-    margin-top: 120px;
-    margin-bottom: 120px;
-    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
+    background-position: center 38%;
+    background-size: 80px 80px;
+    background-color: rgba(210, 230, 245, 0.40);
+    border: 1px solid rgba(220, 238, 255, 0.65);
+    border-radius: 20px;
+    box-shadow: 0 4px 28px rgba(80, 120, 160, 0.25);
+    color: rgba(230, 245, 255, 1.0);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 60px 20px;
+    padding-top: 145px;
+    padding-bottom: 40px;
+    transition: background-color 0.2s ease,
+                border-color    0.2s ease,
+                background-size 0.2s ease;
 }
 
 button:hover {
-    background-color: rgba(184, 149, 80, 0.3);
-    background-size: 80%;
-    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
+    background-color: rgba(210, 235, 255, 0.58);
+    border-color: rgba(200, 230, 255, 0.85);
+    background-size: 88px 88px;
+    box-shadow: 0 6px 36px rgba(100, 160, 210, 0.35);
 }
 
-#lock {
-    background-image: image(url("./icons/lock.png"));
+button:focus {
+    outline: none;
+    box-shadow: 0 4px 28px rgba(80, 120, 160, 0.25);
 }
 
-#logout {
-    background-image: image(url("./icons/logout.png"));
-}
+#lock      { background-image: url("icons-white/lock.png");      }
+#logout    { background-image: url("icons-white/logout.png");    }
+#suspend   { background-image: url("icons-white/sleep.png");     }
+#hibernate { background-image: url("icons-white/hibernate.png"); }
+#reboot    { background-image: url("icons-white/restart.png");   }
+#shutdown  { background-image: url("icons-white/power.png");
+             background-color: rgba(220, 80, 60, 0.35);
+             border-color: rgba(255, 130, 110, 0.55);
+             color: rgba(255, 220, 210, 1.0); }
 
-#logout:hover {
-    background-image: image(url("./icons/logout.png"));
-}
-
-#suspend {
-    background-image: image(url("./icons/sleep.png"));
-} 
-
-#shutdown {
-    background-image: image(url("./icons/power.png"));
-}
-
-#reboot {
-    background-image: image(url("./icons/restart.png"));
-}
-
-#hibernate {
-    background-image: image(url("./icons/hibernate.png"));
+#shutdown:hover {
+    background-color: rgba(220, 80, 60, 0.50);
+    border-color: rgba(255, 140, 120, 0.75);
 }
