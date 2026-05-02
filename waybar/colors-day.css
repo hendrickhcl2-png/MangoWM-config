@@ -1,0 +1,9 @@
+/* Day mode — warm off-white */
+@define-color bg           rgba(0, 0, 0, 0);
+@define-color module-bg    rgba(224, 218, 208, 0.92);
+@define-color fg           #2c2420;
+@define-color fg-dim       #a09488;
+@define-color accent       #4a7a5a;
+@define-color accent-fg    #f0ece4;
+@define-color urgent       #b03820;
+@define-color urgent-fg    #fff8f0;

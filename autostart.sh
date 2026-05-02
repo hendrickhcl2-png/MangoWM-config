@@ -13,10 +13,14 @@ swaync -c ~/.config/mango/swaync/config.jsonc -s ~/.config/mango/swaync/style.cs
 wlsunset -T 3501 -t 3500 >/dev/null 2>&1 &
 
 # wallpaper
-swaybg -i ~/.config/mango/wallpaper/wallpaper.png >/dev/null 2>&1 &
+_wp=$(cat ~/.config/mango/wallpaper/.current 2>/dev/null || echo ~/Pictures/Wallpaper/wallpaper.png)
+swaybg -i "$_wp" >/dev/null 2>&1 &
 
 # top bar
 waybar -c ~/.config/mango/waybar/config.jsonc -s ~/.config/mango/waybar/style.css >/dev/null 2>&1 &
+
+# auto-switch waybar theme based on brightness
+bash ~/.config/mango/scripts/brightness-watch.sh >/dev/null 2>&1 &
 
 
 # xwayland dpi scale

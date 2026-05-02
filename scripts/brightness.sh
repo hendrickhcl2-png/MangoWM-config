@@ -21,12 +21,10 @@ function send_notification {
 case $1 in
 up)
 	swayosd-client --brightness +2
-	# brightnessctl set +1%
-	# send_notification
 	;;
 down)
 	swayosd-client --brightness -2
-	# brightnessctl set 1%-
-	# send_notification
 	;;
 esac
+
+~/.config/mango/scripts/auto-theme.sh &

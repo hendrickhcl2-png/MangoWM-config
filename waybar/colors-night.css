@@ -1,0 +1,9 @@
+/* Night mode — dark warm neutral */
+@define-color bg           rgba(0, 0, 0, 0);
+@define-color module-bg    rgba(22, 20, 18, 0.88);
+@define-color fg           #b8b0a4;
+@define-color fg-dim       #504844;
+@define-color accent       #8BAA9B;
+@define-color accent-fg    #141210;
+@define-color urgent       #ad401f;
+@define-color urgent-fg    #f0e8e0;
